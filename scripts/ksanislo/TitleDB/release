@@ -1,3 +1,10 @@
 #!/bin/bash
 
+cd ~/TitleDB/
+/usr/bin/git fetch -p
+/usr/bin/git pull
+
+/usr/bin/sudo /usr/sbin/service titledb@8080 restart
+/usr/bin/sudo /usr/sbin/service titledb@8081 restart
+
 exit
