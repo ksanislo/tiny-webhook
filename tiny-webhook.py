@@ -11,7 +11,8 @@ import sys
 
 
 class GithubHookHandler(BaseHTTPRequestHandler):
-    """Base class for webhook handlers.
+    """
+    Base class for webhook handlers.
 
     Subclass it and implement 'handle_payload'.
     """
@@ -59,8 +60,8 @@ class MyHandler(GithubHookHandler):
  
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser(description='Github hook handler')
-    argparser.add_argument('--secret', type=str, required=True, help='GitHub secret string')
     argparser.add_argument('--port', type=int, default=6699, help='TCP port to listen on')
+    argparser.add_argument('--secret', type=str, required=True, help='GitHub secret string')
     argparser.add_argument('--scripts', type=str, required=True, help='Path to handler scripts')
     args = argparser.parse_args()
 
