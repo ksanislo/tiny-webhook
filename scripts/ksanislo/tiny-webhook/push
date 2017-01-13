@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ~/tiny-webhook/
+git pull
+
+exit
