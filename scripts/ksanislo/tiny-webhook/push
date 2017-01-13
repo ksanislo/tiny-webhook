@@ -4,4 +4,6 @@ cd ~/tiny-webhook/
 /usr/bin/git fetch -p
 /usr/bin/git pull
 
+/usr/bin/sudo /usr/sbin/service tiny-webhook restart
+
 exit
