@@ -44,7 +44,7 @@ class MyHandler(GithubHookHandler):
         repo_name = json_payload['repository']['full_name']
         run_me = os.path.join(HOOK_SCRIPT_PATH, repo_name, event_type)
         try:
-            subprocess.Popen(run_me)
+            subprocess.call(run_me)
         except FileNotFoundError:
             self.send_response(501)
             status_message = 'Missing handler for ' + repo_name + ':' + event_type
