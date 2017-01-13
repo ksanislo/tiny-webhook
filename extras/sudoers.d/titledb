@@ -1,0 +1,3 @@
+titledb ALL=(ALL) NOPASSWD:/usr/sbin/service titledb@8080 restart
+titledb ALL=(ALL) NOPASSWD:/usr/sbin/service titledb@8081 restart
+titledb ALL=(ALL) NOPASSWD:/usr/sbin/service tiny-webhook restart

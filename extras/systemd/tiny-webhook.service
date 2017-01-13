@@ -7,7 +7,7 @@ User=titledb
 Group=titledb
 GuessMainPID=yes
 Restart=always
-ExecStart=/usr/local/bin/tiny-webhook.py --port --secret <SECERT> --scripts <SCRIPT PATH>
+ExecStart=/usr/local/bin/tiny-webhook.py --port <PORT> --secret <SECERT> --scripts <SCRIPT PATH>
 
 [Install]
 WantedBy=multi-user.target
