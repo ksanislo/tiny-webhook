@@ -4,4 +4,7 @@ cd ~/TitleDB/
 /usr/bin/git fetch -p
 /usr/bin/git pull
 
+/usr/bin/sudo /usr/bin/systemctl restart titledb@8080
+/usr/bin/sudo /usr/bin/systemctl restart titledb@8081
+
 exit
