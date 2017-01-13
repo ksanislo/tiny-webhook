@@ -1,0 +1,13 @@
+[Unit]
+Description=tiny-webhook script launcher
+After=network.target
+
+[Service]
+User=titledb
+Group=titledb
+GuessMainPID=yes
+Restart=always
+ExecStart=/usr/local/bin/tiny-webhook.py --port --secret <SECERT> --scripts <SCRIPT PATH>
+
+[Install]
+WantedBy=multi-user.target
