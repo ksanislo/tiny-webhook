@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/qrbot/
+/usr/bin/git fetch -p
+/usr/bin/git pull
+
+exit
